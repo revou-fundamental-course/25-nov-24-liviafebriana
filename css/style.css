@@ -1,1 +1,24 @@
 /* ini file css */
+
+.main-header {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-section {
+    width: 40%;
+}
+
+footer {
+    text-align: center;
+}
+
+form {
+    background-color: cadetblue;
+    padding: 16px;
+    border-radius: 8px;
+}
