@@ -7,6 +7,15 @@
     
     <!-- link external css -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- link Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- link font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <!-- Judul website -->
@@ -27,10 +36,20 @@
             <!-- Main form -->
             <form>
                 <div class="form-item">
+                    <label for="jenis-kelamin">
+                        Jenis Kelamin:
+                    </label>
+                    <div class="radio-group" id="jenis-kelamin">
+                        <label><input type="radio" name="jenis-kelamin" value="pria"> Pria</label>
+                        <label><input type="radio" name="jenis-kelamin" value="wanita"> Wanita</label>
+                    </div>
+                </div>
+
+                <div class="form-item">
                     <label for="berat-badan-input">
                         Berat Badan (kg):
                     </label>
-                    <input type="number" id="berat-badan-input">
+                    <input type="number" id="berat-badan-input" placeholder="Masukan Berat Badan">
                 </div>
 
                 <div class="form-item">
@@ -48,7 +67,7 @@
                 </div>
 
                 <div class="form-button-container">
-                    <button>Hitung BMI</button>
+                    <button class="bg-dark text-white" id="hitung-hasil">Hitung BMI</button>
                     <button>Reset</button>
                 </div>
             </form>
@@ -75,22 +94,38 @@
         </section>
 
         <!-- Section hasil kalkulasi -->
-         <section>
-            <div>
-                <header>
-                    <h2>Hasil</h2>
-                </header>
+         <section class="main-section">
+            <header>
+                <h2>Hasil</h2>
+            </header>
 
-                <p>Berat Badan Lebih</p>
-
+            <div class="hasil-content">
+                <p>Hasil BMI akan ditampilkan di sini</p>
                 <div id="result-calculation">0</div>
+                <p>Silahkan isi form nya dulu yaa</p>
+                <button class="bg-dark text-white"><i class="fa-solid fa-download"></i> Download Hasil BMI</button>
+            </div>
+
+            <!-- Third Article -->
+            <p>Hasil BMI diantara 0 dan 0</p>
+            <p>Anda berada dalam kategori overweight atau berat badan berlebih. <br>
+            Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalori makanan yang dikonsumsi dan berolahraga. <br>
+            Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk menurunkan berat badan hingga batas normal.</p>
+            
+            <div class="article-button-container">
+                <button class="bg-dark text-white">Konsultasi Ahli Gizi Via Aplikasi</button>
+                <button class="bg-dark text-white">Registrasi Online Ahli Gizi</button>
             </div>
          </section>
      </main>
 
     <!-- Footer website -->
      <footer>
-        <p>Made by Livia@2024</p>
+        <p>Made by Livia Febriana@2024</p>
      </footer>
+
+     
+    
+    
 </body>
 </html>
