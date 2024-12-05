@@ -1,5 +1,6 @@
 /* ini file css */
 
+/* Mengatur gaya dasar halaman. */
 body {
     margin: 0;
     font-family: "Poppins", serif;
@@ -9,36 +10,35 @@ body {
     text-align: center;
 }
 
+/* Menyusun elemen secara horizontal dengan jarak merata. */
 main {
     display: flex;
     justify-content: space-evenly;
 }
 
+/* Menentukan lebar bagian utama. */
 .main-section {
     width: 40%;
 }
 
-footer {
-    background-color: #41444B; 
-    color: #fff; 
-    text-align: center; 
-    padding: 10px; 
-    margin-top: 25px;
-}
-
+/* Memberi gaya pada form agar lebih menarik. */
 form {
     background-color: #ADC4CE;
     padding: 16px;
     border-radius: 8px;
 }
 
+/* Menyusun item dalam form secara horizontal. */
 .form-item {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
+/* Mengatur tampilan input angka. */
 input[type=number] {
-    width: 40%;
+    width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -47,10 +47,12 @@ input[type=number] {
     box-sizing: border-box;
 }
 
+/* Menyediakan ruang untuk tombol form. */
 .form-button-container {
     margin-top: 32px;
 }
 
+/* Memberi gaya tombol agar terlihat modern. */
 button {
     font-family: "Roboto", serif;
     border: 0;
@@ -59,18 +61,17 @@ button {
     cursor: pointer;
 }
 
+/* Memberikan latar warna gelap. */
 .bg-dark {
     background-color: #41444B;
 }
 
+/* Memberikan warna teks putih. */
 .text-white {
     color: #fff;
 }
 
-label {
-    margin-bottom: 15px;
-}
-
+/* Menampilkan hasil dengan gaya khusus. */
 .hasil-content {
     text-align: center;
     background-color: #ADC4CE;
@@ -78,6 +79,60 @@ label {
     border-radius: 8px;
 }
 
+/* Menonjolkan teks hasil perhitungan. */
 #result-calculation {
-    font-size: 25px;
+    font-size: 30px;
+}
+
+/* Memberikan jarak vertikal di atas header informasi. */
+.info-header {
+    margin-top: 50px;
+}
+
+/* Membuat area konten informasi dengan tampilan yang menarik dan terstruktur. */
+.info-content {
+    text-align: center;
+    background-color: #e1ecf1;
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 2px 35px 2px 35px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Membuat teks rata kanan-kiri  */
+.info-content p {
+    text-align: justify;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Mengatur margin vertikal tombol dalam konten informasi */
+.info-content button {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* Membuat footer dengan tampilan terpusat. */
+footer {
+    background-color: #41444B; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px; 
+    margin-top: 25px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .main-section {
+        width: 100%;
+    }
+
+    button {
+        margin-bottom: 8px;
+    }
 }
